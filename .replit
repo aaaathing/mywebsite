@@ -31,13 +31,13 @@ defaultBucketID = "replit-objstore-dfc036d2-f315-4a87-877d-ec3cea3d75ed"
 
 [[ports]]
 localPort = 80
-externalPort = 80
 
 [[ports]]
 localPort = 3001
 
 [[ports]]
 localPort = 8080
+externalPort = 80
 
 [workflows]
 
@@ -49,3 +49,6 @@ author = 7458955
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "git submodule update --recursive"
+
+[agent]
+expertMode = true

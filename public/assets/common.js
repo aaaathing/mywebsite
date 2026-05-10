@@ -19,10 +19,8 @@ window.doLiveContent = false
 // Aug 4, 2025: add message
 if(location.pathname.startsWith("/post") || location.pathname.startsWith("/user") || location.pathname.startsWith("/login") || location.pathname.startsWith("/account")){
 	addBanner(`<big>
-Sorry that Posts, maps, accounts, and others were shut down. <br> I decided to shut it down because I didn't want to maintain it anymore. <br> You people that used to come here probably liked the small isolated community on here. I miss it too. <br> There is still a chat on the <a href="/">home page</a>.<br>
+Sorry, but Posts, maps, accounts, and others were shut down. <br> I didn't want to maintain it anymore. There isn't really anyone else that can host it. <br> There is still a chat on the <a href="/">home page</a>.<br> Because these were shut down, these won't work anymore. <br>
 </big>
-If you want to find the remains, see 'Old website' on the <a href="/">home page</a> on the left.<br>
-<small>Apr 26, 2025: the website went down. May 5, 2025: I finally got it back up by splitting the website in two. May 8, 2025: I decided to shut it down if nothing happens at end of week. May 11, 2025: It was shut down.</small><br>
 `,
 "#FFA372")
 }
@@ -195,7 +193,7 @@ var navbar = document.createElement("nav");
 navbar.className = "navbar navbarStick"
 
 navbar.innerHTML = `
-  <a class="logo" href="/"><span style="font-size:50%;transform:scaleY(2);display:inline-block;">Many things website</span></a>
+  <a class="logo" href="/">My website</a>
   <div class="search-container">
     <form action="https://google.com/search">
       <input type="text" placeholder="Search..." name="q">
@@ -203,15 +201,7 @@ navbar.innerHTML = `
     </form>
   </div>
 
-	<a onclick="history.back()">◀</a>
-	<a onclick="history.forward()">▶</a>
-	<a onclick="location.reload()">↻</a>
-	<div class="dropdown">
-    <a class="dropdown-name" href="/minekhan/">MineKhan</a>
-    <div class="dropdown-content">
-			<a href="/minekhan/">MineKhan (thingmaker version)</a>
-    </div>
-  </div>
+	<a href="https://aaaathing.github.io/my-website-2025/">New website</a>
 
 	<a class="right" onclick="navbar.classList.remove('navbarStick')">&times;</a>
 
@@ -223,8 +213,6 @@ navbar.innerHTML = `
       <a onclick="setTheme('dark,glow')">Glow</a>
     </div>
   </div>
-
-	<a class="right" href="/old.html">(2) message to people from 2021-2023</a>
 	
 	<span id="adminNav"></span>
 
@@ -404,9 +392,12 @@ let footer = document.createElement("footer")
 footer.innerHTML = `
 <div class="lists">
 	<div>
-	  <b>footer</b>
+	  <b>To contact:</b>
 	  <ul>
-	    <li><a href="/">home</a></li>
+	    <li><a href="https://aaaathing.github.io/my-website-2025/">My new website</a></li>
+	    <li><a href="https://scratch.mit.edu/users/2-people">scratch</a></li>
+	    <li><a href="https://replit.com/@thingMaker">replit</a></li>
+	    <li><a href="https://github.com/aaaathing/">github</a></li>
 	  </ul>
 	</div>
 </div>
